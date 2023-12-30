@@ -43,7 +43,7 @@ const Section4 = () => {
                                     <p className='color-white fs-xs fw-normal lh-160 ff-montserrat'>Transaction per wallet</p>
                                 </Col>
                             </Row>
-                            <div className='max-w-494 pt-4'>
+                            <div className='max-w-4 94 pt-4'>
                                 <div className='d-flex align-items-center gap-3'>
                                     <Button className="counter-btn color-black ff-montserrat fw-extrabold lh-109 fs-lg pb-2" onClick={decrement}>-</Button>
                                     <div className="count-btn d-flex align-items-center justify-content-center">

@@ -1,11 +1,5 @@
 import React from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
-import cardsvg1 from '../assets/images/cardsvg1.svg'
-import cardsvg2 from '../assets/images/cardsvg2.svg'
-import cardsvg3 from '../assets/images/cardsvg3.svg'
-
-
-
 
 const card2 = [
     {
@@ -50,7 +44,7 @@ const Cardsection = () => {
                 <div className='card-ellipse'></div>
                 <div className='card-topellipse'></div>
             </Card >
-        </Col >
+        </Col>
     ))
     return (
         <div>

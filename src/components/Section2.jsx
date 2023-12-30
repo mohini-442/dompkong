@@ -14,7 +14,7 @@ function Section2() {
                         <p className='ff-montserrat fw-normal fs-xs lh-160 text-white max-w-520 mx-a'>Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vitae mollis lacus senectus mattis nisl. Porta , adipiscing sed mus diam amet, ac sed tellus. </p>
                     </Col>
                     <Col lg={6} className='position-relative z-2'>
-                        <img src={watches} alt="watches" className=' w-100' />
+                        <img src={watches} alt="watches" className='w-100' />
                         <div className='ellipsee'></div>
                     </Col>
                 </Row>
