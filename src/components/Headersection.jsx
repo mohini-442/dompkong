@@ -8,7 +8,7 @@ import monkey3 from '../assets/images/monkey3.png'
 const Headersection = () => {
     return (
         <div>
-            <header className='bg-header min-vh-100 position-relative z-2'>
+            <header className='bg-header min-vh-100 position-relative z-2 overflow-hidden'>
                 <Container className='position-relative'>
                     <div className='d-flex align-items-center justify-content-center flex-column pt-2'>
                         <img src={dpklogo} alt="dpklogo" className='cursor-pointer' />
@@ -75,8 +75,8 @@ const Headersection = () => {
                         <li><a href="#" className='fs-xs fw-normal color-black btn-1 ff-SansUber'>Opensea</a></li>
                     </ul>
                 </Container>
-                <img src={monkey1} alt="monkey1" className='monkey1 d-none d-md-block' />
-                <img src={monkey2} alt="monkey2" className='monkey2  d-none d-md-block' />
+                <img src={monkey1} alt="monkey1" className='monkey1' />
+                <img src={monkey2} alt="monkey2" className='monkey2  d-none d-sm-block' />
                 <img src={monkey3} alt="monkey3" className='monkey3  d-none d-md-block' />
             </header>
         </div>

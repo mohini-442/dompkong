@@ -175,20 +175,53 @@
   bottom: 0;
   right: 32%;
   z-index: -1;
+  animation: monkey1 5s forwards;
+}
+
+@keyframes monkey1 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: -9%;
+  }
 }
 
 .monkey2 {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 0%;
   z-index: -1;
+  animation: monkey2 5s forwards;
+}
+
+@keyframes monkey2 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: -7%;
+  }
 }
 
 .monkey3 {
+  animation: monkey3 5s forwards;
   position: absolute;
   bottom: 0;
   right: 0%;
   z-index: -1;
+}
+
+@keyframes monkey3 {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
 }
 
 /* cardsection */
@@ -212,6 +245,7 @@
 .card2:hover svg path {
   stroke: var(--black);
 }
+
 .card2:hover h2 {
   color: var(--black) !important;
 }
@@ -266,62 +300,88 @@
   position: absolute;
   top: 2%;
   left: 0%;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  border-left: 4px solid var(--light-yellow);
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong2 {
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 0%;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong3 {
   position: absolute;
   top: 39%;
-  left: 12%;
+  left: 0%;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong4 {
   position: absolute;
   top: 57%;
-  left: 5%;
+  left: 0%;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong5 {
   position: absolute;
   top: 76%;
   left: 0%;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  border-left: 4px solid var(--light-yellow);
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong6 {
   position: absolute;
   top: 2%;
   right: 0%;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  border-right: 4px solid var(--light-yellow);
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong7 {
   position: absolute;
   top: 20%;
-  right: 5%;
+  right: 0%;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong8 {
   position: absolute;
   top: 39%;
-  right: 12%;
+  right: 0%;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong9 {
   position: absolute;
   top: 57%;
-  right: 5%;
+  right: 0%;
   border: 4px solid var(--light-yellow);
   border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .kong10 {
   position: absolute;
   top: 76%;
   right: 0%;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  border-right: 4px solid var(--light-yellow);
+  box-shadow: 0px 4px 15px 0px rgba(253, 218, 96, 0.50);
 }
 
 .pb-370 {
@@ -429,9 +489,9 @@
 }
 
 .svg-shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  /* filter: drop-shadow(1px 1px 17px 2px rgba(219, 171, 13, 0.62)) !important; */
+  -webkit-filter: drop-shadow(4px 4px 34px rgba(237, 200, 18, 0.7));
+  filter: drop-shadow(3px 3px 34px rgba(242, 234, 13, 0.7));
 }
 
 /* roadmap */
@@ -483,8 +543,12 @@
   background-color: var(--white);
 }
 
-.svg {
+.svg2 {
   transition: all .5s linear;
+}
+
+.svg2:hover {
+  transform: translateY(-12%);
 }
 
 .svg2:hover path {
@@ -494,6 +558,10 @@
 .svg3 {
   cursor: pointer;
   transition: all .5s linear;
+}
+
+.svg3:hover {
+  transform: translateY(-12%);
 }
 
 .svg3:hover path {
@@ -592,7 +660,7 @@
   width: 100%;
   height: 1px;
   background-color: var(--light-yellow);
-   box-shadow: 0px 0px 38px 1px rgba(253, 218, 96, 1);
+  box-shadow: 0px 0px 38px 1px rgba(253, 218, 96, 1);
 }
 
 .accordion-button:not(.collapsed) {
@@ -653,6 +721,10 @@
   z-index: -1;
 }
 
+.overflow_hidden {
+  overflow: hidden;
+}
+
 .footer-ellipse2 {
   width: 247px;
   height: 247px;
@@ -710,12 +782,12 @@
 
 .svgIcon path {
   fill: white;
-} 
+}
 
 /* preloader */
 
-.d_none{
-  display: none;
+.d_none {
+  display: none !important;
 }
 
 @keyframes swing {
@@ -754,10 +826,17 @@
     text-align: center;
   }
 
+  .kong {
+    width: 96%;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
   .w-img {
     width: 60%;
   }
-  .mx-a{
+
+  .mx-a {
     margin-left: auto;
     margin-right: auto;
   }
@@ -784,6 +863,16 @@
     width: 320px;
   }
 
+  @keyframes monkey1 {
+    0% {
+      right: -100%;
+    }
+
+    100% {
+      right: 32%;
+    }
+  }
+
   .roadmaplinee::before {
     left: 5.5%;
   }
@@ -807,7 +896,26 @@
     object-fit: cover;
     background-repeat: no-repeat;
   }
+
+  .monkey2 {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: -1;
+    animation: monkey2 5s forwards;
+  }
+
+  @keyframes monkey2 {
+    0% {
+      right: -100%;
+    }
+
+    100% {
+      right: 10%;
+    }
+  }
 }
+
 
 @media (min-width:1200px) {
   .roadmapline {
@@ -838,6 +946,68 @@
     position: absolute;
     top: 92%;
     left: 21%;
+  }
+
+  .kong1 {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+  }
+
+  .kong2 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  .kong3 {
+    position: absolute;
+    top: 39%;
+    left: 12%;
+  }
+
+  .kong4 {
+    position: absolute;
+    top: 57%;
+    left: 5%;
+  }
+
+  .kong5 {
+    position: absolute;
+    top: 76%;
+    left: 0%;
+  }
+
+  .kong6 {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+  }
+
+  .kong7 {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+
+  .kong8 {
+    position: absolute;
+    top: 39%;
+    right: 12%;
+  }
+
+  .kong9 {
+    position: absolute;
+    top: 57%;
+    right: 5%;
+    border: 4px solid var(--light-yellow);
+    border-radius: 15px;
+  }
+
+  .kong10 {
+    position: absolute;
+    top: 76%;
+    right: 0%;
   }
 }
 

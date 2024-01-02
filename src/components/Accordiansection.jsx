@@ -2,6 +2,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import footerlogo from '../assets/images/footerlogo.png'
 
 function Accordiansection() {
+    const today = new Date()
+    const year = today.getFullYear();
     return (
         <section className=' footerbg position-relative z-2'>
             <h2 className='ff-SansUber fs-xl fw-normal color-white text-center pb-5 py-4'>FAQs</h2>
@@ -84,7 +86,7 @@ function Accordiansection() {
                             </svg>
                         </a>
                     </div>
-                    <p className='ff-montserrat color-white fw-normal fs-xs text-center mb-0 pt-5 pb-2'>© DomPKong 2022</p>
+                    <p className='ff-montserrat color-white fw-normal fs-xs text-center mb-0 pt-5 pb-2 '>© DomPKong {year}</p>
                 </div>
             </footer>
             <div className='footer-ellipse1 d-none d-md-block'></div>

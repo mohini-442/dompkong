@@ -6,7 +6,7 @@ import wineimg from '../assets/images/wineimg.png'
 const Section4 = () => {
     const [count, setCount] = useState(1);
     const decrement = () => {
-        if (count > 1) {
+        if (count >= 1) {
             setCount(count - 1);
         }
     }
@@ -27,7 +27,7 @@ const Section4 = () => {
                             <h2 className='color-white fs-xl fw-normal ff-SansUber lh-108'>Mint NFT</h2>
                             <Row className='pt-4'>
                                 <Col className='col-6'>
-                                    <h3 className='color-white fs-lg ff-montserrat fw-extrabold'>9999 </h3>
+                                    <h3 className='color-white fs-lg ff-montserrat fw-extrabold'>9999</h3>
                                     <p className='color-white fs-xs fw-normal lh-160 ff-montserrat'>of 10,000 minted</p>
                                 </Col>
                                 <Col className='col-6'>
@@ -43,19 +43,16 @@ const Section4 = () => {
                                     <p className='color-white fs-xs fw-normal lh-160 ff-montserrat'>Transaction per wallet</p>
                                 </Col>
                             </Row>
-                            <div className='max-w-4 94 pt-4'>
+                            <div className='max-w-494 pt-4'>
                                 <div className='d-flex align-items-center gap-3'>
                                     <Button className="counter-btn color-black ff-montserrat fw-extrabold lh-109 fs-lg pb-2" onClick={decrement}>-</Button>
                                     <div className="count-btn d-flex align-items-center justify-content-center">
-                                        <p className="mx-auto color-white lh-109 text-center mb-0 fw-extrabold  fs-lg ff-montserrat">
+                                        <p className="mx-auto color-white lh-109 text-center mb-0 fw-extrabold  fs-lg ff-montserrat d-flex">
                                             {" "}<span id='addzero'>0</span>
                                             {count}
                                         </p>
                                     </div>
-                                    <Button
-                                        onClick={() => setCount(count + 1)}
-                                        className="counter-btn color-black fw-extrabold lh-109 fs-lg ff-montserrat pb-2"
-                                    >
+                                    <Button className="counter-btn color-black fw-extrabold lh-109 fs-lg ff-montserrat pb-2" onClick={() => setCount(count + 1)}>
                                         +
                                     </Button>
                                 </div>
@@ -65,9 +62,8 @@ const Section4 = () => {
                     </Col>
                 </Row>
             </Container>
-            <div className='ellipse-1'></div>
-            <div className='ellipse-2'></div>
-
+            <div className='ellipse-1 d-none d-lg-block'></div>
+            <div className='ellipse-2 d-none d-lg-block'></div>
         </section>
     )
 }
